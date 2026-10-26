@@ -1,0 +1,50 @@
+spec_version: v1
+kind: user_story
+id: US-MVG-001
+title: Redundancy - three-month payment holiday request (pre-arrears)
+agent: mortgage_vulnerability_guidance_agent
+agent_display_name: Mortgage Vulnerability & Regulatory Guidance Research Agent
+
+persona:
+  role: Mortgage servicing case worker
+  goal: >-
+    Understand the regulatory obligations and the forbearance options available
+    when a customer asks for support before any arrears have arisen.
+
+story_context:
+  scenario: Redundancy
+  summary: >-
+    Customer has lost their job, has no savings and requests a three-month
+    payment holiday. No payments missed yet.
+  customer_circumstances:
+    employment_status: Made redundant
+    savings: None
+    requested_relief: Three-month payment holiday
+    arrears_status: No payments missed
+  vulnerability_drivers:
+    - Life events (job loss)
+    - Resilience (no savings, loss of income)
+
+regulation:
+  primary: MCOB 13
+  theme: Proactive forbearance before arrears
+  related:
+    - FCA Consumer Duty (PRIN 2A)
+    - FCA FG21/1 (vulnerable customers)
+    - UK Mortgage Charter
+
+expected_agent_behaviour:
+  - Recognises that MCOB 13 forbearance expectations apply even though no arrears exist yet.
+  - Treats the customer as potentially vulnerable under FG21/1 (life event and resilience drivers).
+  - Evaluates the requested payment holiday, including accrued interest and credit file implications.
+  - Presents alternatives such as interest-only switch or term extension (Mortgage Charter).
+  - Signposts free independent debt advice (MoneyHelper, StepChange, Citizens Advice, National Debtline).
+  - Reminds the case worker to verify affordability against current income and expenditure.
+  - Returns the standard 6-part Mortgage Servicing Research Brief with cited sources.
+
+# Single-line form of the story, used as the `story` column for
+# `orchestrate evaluations generate`.
+story: >-
+  Redundancy: Customer has lost their job, has no savings and requests a
+  three-month payment holiday. No payments missed yet. Regulation: MCOB 13 -
+  proactive forbearance before arrears.

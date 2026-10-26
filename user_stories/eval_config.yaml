@@ -1,0 +1,14 @@
+# Evaluation settings for `orchestrate evaluations evaluate -c user_stories/eval_config.yaml`
+# The default simulated-user / judge model (watsonx/openai/gpt-oss-120b) returns HTTP 500
+# on this tenant, so both are pointed at a model that is enabled here.
+test_paths:
+  - user_stories/test_cases/af1d7649-1dd0-43f3-b2b1-6840b285645f.json
+output_dir: user_stories/results
+max_user_turns: 2
+llm_user_config:
+  model_id: groq/openai/gpt-oss-120b
+  provider_config:
+    model_id: groq/openai/gpt-oss-120b
+evaluation_config:
+  provider_config:
+    model_id: groq/openai/gpt-oss-120b
