@@ -22,9 +22,14 @@ To get set up with Bob:
 
 ## 🔍 What We're Building
 
+![alt text](image.png)
+
+
 You will deploy a **Mortgage Vulnerability & Regulatory Guidance Research Agent** — an AI assistant that helps mortgage case workers understand their regulatory obligations (FCA MCOB 13, Consumer Duty, FG21/1) when a customer asks for a payment holiday.
 
 The agent uses the **Gemini API** to answer questions. In this lab, Gemini acts as a knowledgeable assistant drawing on its training data — a practical stand-in for a live Google Search. If you have access to the Gemini API's paid tier, you can enable the `google_search` grounding tool in `tools/gemini_web_search.py` with one line change and get live web results instead.
+
+![alt text](image-1.png)
 
 You will then:
 - Write three synthetic user stories about a redundancy scenario
